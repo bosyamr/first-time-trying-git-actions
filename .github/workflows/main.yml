@@ -13,8 +13,7 @@ jobs:
 
     steps:
       
-    - uses: actions/checkout@v3
+       - uses: actions/checkout@v3
 
        -name: "login to Docker hub"
         run: docker login --username basant9 --password dckr_pat_AgF4teAZvmeEadjjVresGL808_8
-        
