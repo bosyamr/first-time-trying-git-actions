@@ -1,5 +1,5 @@
- on:
-   push:
+on:
+  push:
     branches:
       - ma
 
@@ -14,8 +14,9 @@ jobs:
 
     steps:
       
-    name: "Login to DockerHub"
- uses: docker/login-action@v3 
- with: 
-  username: basant9
-  password: 01289603131@basant
+    - name: 'before'
+      run: ls
+
+    - uses: actions/checkout@v3
+    - name: 'after'
+      run: ls
