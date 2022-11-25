@@ -1,4 +1,8 @@
 {
-  "ExpandedNodes": [],
+  "ExpandedNodes": [
+    "",
+    "\\workflows"
+  ],
+  "SelectedNode": "\\workflows\\main.yml",
   "PreviewInSolutionExplorer": false
 }
