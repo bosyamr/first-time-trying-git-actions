@@ -15,6 +15,6 @@ jobs:
     steps:
       
     - name: 'Testing Github action'
-        run:pwd
+      run: pwd
     - name: 'Testing Github action'
-        run:echo Ahmed
+      run: echo Ahmed
