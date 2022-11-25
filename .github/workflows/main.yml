@@ -17,4 +17,4 @@ jobs:
 
        -name: "login to Docker hub"
         run: docker login --username basant9 --password dckr_pat_AgF4teAZvmeEadjjVresGL808_8
-        on: [push]
+        on: push
