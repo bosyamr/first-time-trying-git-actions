@@ -10,4 +10,8 @@ jobs:
    steps: 
      - uses: actions/checkout@v3
      - name: "login to Docker hub"
-       run: docker login --username ${{ SECRETS.DOCKER_USERNAME }} --password ${{ SECRETS.DOCKER_TOKEN }} 
+       run: docker login --username basant9 --password dckr_pat_Eg7ymKv_3fI4drHyJraVwE5YK3I
+     -name: "building docker image"
+      run: docker build -t basant9/myimage .
+     -name: "pushing to docker hub"
+      run: docker push basant9/myimage
