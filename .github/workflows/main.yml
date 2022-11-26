@@ -4,20 +4,11 @@ on:
       - ma
 
 
-
-
-
-
 jobs:
-  build:
-    runs-on: ubuntu-latest
-
-    steps:
-    -uses: actions/checkout@v3
-      
-    - name: "login to docker hub"
-      run: docker login --username ${{ secret.DOCKER_USERNAME }} --password ${{secrets.DOCKER_TOKEN}}
-    -name: "building docker image"
-      run: docker build -t  ${{ secret.DOCKER_USERNAME }}/myimage .
-    -name: "pushing to docker hup"
-      run: docker push  ${{ secret.DOCKER_USERNAME }}/myimage
+ build:
+   runs-on: ubuntu-latest
+   steps: 
+     - uses: actions/checkout@v3
+     - name: "login to Docker hub"
+       run: docker login --username basant9 --password dckr_pat_Eg7ymKv_3fI4drHyJraVwE5YK3I
+       
